@@ -1,0 +1,109 @@
+    //Méthode 13
+    enum Mois
+    {JANVIER, FÉVRIER, MARS, AVRIL, MAI, JUIN, JUILLET, AOÛT, SEPTEMBRE, OCTOBRE, NOVEMBRE, DÉCEMBRE}
+
+    public Mois retournerMois(int pJour, int pAnnee)
+    {
+        Mois mois;
+
+        if (pAnnee % 4 == 0 || pAnnee % 100 != 0 && pAnnee % 400 == 0)
+        {
+            if (pJour <= 31)
+            {
+                mois = Mois.JANVIER;
+            }
+            else if (pJour <= 60)
+            {
+                mois = Mois.FÉVRIER;
+            }
+            else if (pJour <= 91)
+            {
+                mois = Mois.MARS;
+            }
+            else if (pJour <= 121)
+            {
+                mois = Mois.AVRIL;
+            }
+            else if (pJour <= 152)
+            {
+                mois = Mois.MAI;
+            }
+            else if (pJour <= 182)
+            {
+                mois = Mois.JUIN;
+            }
+            else if (pJour <= 213)
+            {
+                mois = Mois.JUILLET;
+            }
+            else if (pJour <= 244)
+            {
+                mois = Mois.AOÛT;
+            }
+            else if (pJour <= 274)
+            {
+                mois = Mois.SEPTEMBRE;
+            }
+            else if (pJour <= 305)
+            {
+                mois = Mois.OCTOBRE;
+            }
+            else if (pJour <= 335)
+            {
+                mois = Mois.NOVEMBRE;
+            }
+            else
+            {
+                mois = Mois.DÉCEMBRE;
+            }
+        }
+        else if (pJour <= 31)
+        {
+            mois = Mois.JANVIER;
+        }
+        else if (pJour <= 59)
+        {
+            mois = Mois.FÉVRIER;
+        }
+        else if (pJour <= 90)
+        {
+            mois = Mois.MARS;
+        }
+        else if (pJour <= 120)
+        {
+            mois = Mois.AVRIL;
+        }
+        else if (pJour <= 151)
+        {
+            mois = Mois.MAI;
+        }
+        else if (pJour <= 181)
+        {
+            mois = Mois.JUIN;
+        }
+        else if (pJour <= 212)
+        {
+            mois = Mois.JUILLET;
+        }
+        else if (pJour <= 243)
+        {
+            mois = Mois.AOÛT;
+        }
+        else if (pJour <= 273)
+        {
+            mois = Mois.SEPTEMBRE;
+        }
+        else if (pJour <= 304)
+        {
+            mois = Mois.OCTOBRE;
+        }
+        else if (pJour <= 334)
+        {
+            mois = Mois.NOVEMBRE;
+        }
+        else
+        {
+            mois = Mois.DÉCEMBRE;
+        }
+        return mois;
+    }
